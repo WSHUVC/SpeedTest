@@ -1,0 +1,1404 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8147981704631066396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8147981704631066394}
+  - component: {fileID: 8147981704631066395}
+  m_Layer: 0
+  m_Name: LayoutLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8147981704631066394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147981704631066396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8147981704631066395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147981704631066396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4847993f36b1eca4dbf04a18d1a22087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutFile: D:/Unity/HyundaeAutoEverTest_WSH/Assets/Resources/Layouts/Layout.xml
+  rootNodeName: FACTORYLAYOUT/process
+  layouts:
+  - code: TE1
+    model: TE1
+    procTime: 535
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -38.85
+    posY: 0.02
+    posZ: 34.85
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: DR-M-02
+      model: TE1_Set_Pallet_Door
+      posX: -42.85
+      posY: 0.3699999
+      posZ: 32.625
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-01
+      model: TE1_Set_Pallet_Door
+      posX: -34.85
+      posY: 0.3699999
+      posZ: 32.625
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE1-R-02-A
+      model: Set_Box_Rack
+      posX: -42.6
+      posY: 0.369
+      posZ: 37.075
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-01-A
+      model: Set_Box_Rack
+      posX: -35.1
+      posY: 0.369
+      posZ: 37.075
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-01-B
+      model: Set_Box_Rack
+      posX: -35.1
+      posY: 0.369
+      posZ: 34.85
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-02-B
+      model: Set_Box_Rack
+      posX: -42.6
+      posY: 0.369
+      posZ: 34.85
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+  - code: TE2
+    model: TE2
+    procTime: 345
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -38.85
+    posY: 0.02
+    posZ: 20.1
+    rotX: 0
+    rotY: 180
+    rotZ: 0
+    ports:
+    - code: TE2-D-01
+      model: TE2_LH-1_Set_Pallet
+      posX: -42.34999
+      posY: 0.3699999
+      posZ: 21.09999
+      rotX: 90
+      rotY: 270
+      rotZ: 0
+    - code: TE2-D-02
+      model: TE2_RH-1_Set_Pallet
+      posX: -35.1
+      posY: 0.02
+      posZ: 18.1
+      rotX: 90
+      rotY: 270
+      rotZ: 0
+    - code: TE2-D-03
+      model: TE2_RH-2_Set_Pallet
+      posX: -35.35
+      posY: 0.02
+      posZ: 21.7
+      rotX: 90
+      rotY: 270
+      rotZ: 0
+  - code: TE3
+    model: TE3
+    procTime: 542
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -38.85
+    posY: 0.02
+    posZ: 5.3
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: TE3-SR-01
+      model: Set_Box_Rack
+      posX: -35.1
+      posY: 0.3690009
+      posZ: 5.3
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE3_SR_02
+      model: Set_Box_Rack
+      posX: -35.1
+      posY: 0.3699999
+      posZ: 7.525
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE3-R-01
+      model: Set_Box_Rack
+      posX: -42.6
+      posY: 0.369
+      posZ: 5.3
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE3-R-02
+      model: Set_Box_Rack
+      posX: -42.6
+      posY: 0.369
+      posZ: 7.525
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE3-D-01
+      model: TE3_Modul1_Pallet
+      posX: -42.65
+      posY: 0.52
+      posZ: 3.075
+      rotX: 90
+      rotY: 0
+      rotZ: 0
+    - code: TE3-D-02
+      model: TE3_Modul2_Pallet
+      posX: -35.05
+      posY: 0.52
+      posZ: 3.075
+      rotX: 90
+      rotY: 180
+      rotZ: 0
+  - code: TE4
+    model: TE4
+    procTime: 450
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -38.85
+    posY: 0.02
+    posZ: -8.95
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: TE4-D-01
+      model: TE4_LH_BLower_Pallet
+      posX: -35.25
+      posY: 0.02
+      posZ: -11.45
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE4-D-03
+      model: TE4_LH_Bumper_Pallet
+      posX: -35.15
+      posY: 0.02
+      posZ: -6.549999
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE4-D-02
+      model: TE4_RH_CPAD_Pallet
+      posX: -42.45
+      posY: 0.01000001
+      posZ: -11.95
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: CPAD-M-01
+      model: TE4_RH_HeadLining_Pallet
+      posX: -42.45
+      posY: 0.02
+      posZ: -7.75
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+  - code: TE5
+    model: TE5
+    procTime: 630
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -38.85
+    posY: 0.01
+    posZ: -18
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: TE5-D-02
+      model: TE5_2Step_Pallet
+      posX: -42.45
+      posY: 0.3700006
+      posZ: -17.789
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE5-D-01
+      model: TE5_2Step_Pallet
+      posX: -35.25
+      posY: 0.3700006
+      posZ: -18.2
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+  - code: PM
+    model: PM
+    procTime: 1590
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -19.3
+    posY: 0.02
+    posZ: 24.08
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: PM-D-01
+      model: PM_Pallet
+      posX: -19.3
+      posY: 0.3752096
+      posZ: 27.3
+      rotX: 270
+      rotY: 0
+      rotZ: 0
+    - code: PM-R-01-B
+      model: Set_Box_Rack
+      posX: -17.425
+      posY: 0.3700905
+      posZ: 20.33
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+    - code: PM-R-01-A
+      model: Set_Box_Rack
+      posX: -19.675
+      posY: 0.3700905
+      posZ: 20.33
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+  - code: AM
+    model: AM
+    procTime: 1590
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -19.3
+    posY: 0.02
+    posZ: -16
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: AM-D-01
+      model: AM_Pallet
+      posX: -19.3
+      posY: 0.3791247
+      posZ: -19.56
+      rotX: 270
+      rotY: 180
+      rotZ: 0
+    - code: AM-R-01-B
+      model: Set_Box_Rack
+      posX: -19.6
+      posY: 0.3678809
+      posZ: -12.24797
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+    - code: AM-R-01-A
+      model: Set_Box_Rack
+      posX: -17.325
+      posY: 0.3678809
+      posZ: -12.24797
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+  - code: FD1
+    model: FD1
+    procTime: 503
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -26
+    posY: 0.02
+    posZ: 35.35
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: FD14-R-02-A
+      model: Set_Box_Rack
+      posX: -22.25
+      posY: 0.368999
+      posZ: 33.625
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-01-A
+      model: Set_Box_Rack
+      posX: -29.75
+      posY: 0.368999
+      posZ: 33.625
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-02-B
+      model: Set_Box_Rack
+      posX: -22.25
+      posY: 0.368999
+      posZ: 35.875
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-01-B
+      model: Set_Box_Rack
+      posX: -29.75
+      posY: 0.368999
+      posZ: 35.875
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+  - code: FD2
+    model: FD2
+    procTime: 527
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -6.73
+    posY: 0.02
+    posZ: 44.1
+    rotX: 0
+    rotY: 90
+    rotZ: 0
+    ports:
+    - code: FD25-R-02-A
+      model: Set_Box_Rack
+      posX: -8.45507
+      posY: 0.3689993
+      posZ: 40.35
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+    - code: FD25-R-01-A
+      model: Set_Box_Rack
+      posX: -8.455
+      posY: 0.368999
+      posZ: 47.85
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+    - code: FD25-R-02-B
+      model: Set_Box_Rack
+      posX: -6.205001
+      posY: 0.368999
+      posZ: 40.35
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+    - code: FD25-R-01-B
+      model: Set_Box_Rack
+      posX: -6.205
+      posY: 0.368999
+      posZ: 47.85
+      rotX: 0
+      rotY: 0
+      rotZ: 0
+  - code: FD3
+    model: FD3
+    procTime: 473
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 0.8
+    posY: 0.02
+    posZ: 44.1
+    rotX: 0
+    rotY: 270
+    rotZ: 0
+    ports:
+    - code: FD36-R-01-B
+      model: Set_Box_Rack
+      posX: 2.525003
+      posY: 0.3689988
+      posZ: 47.85
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+    - code: FD36-R-02-B
+      model: Set_Box_Rack
+      posX: 2.525003
+      posY: 0.368999
+      posZ: 40.35
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+    - code: FD36-R-01-A
+      model: Set_Box_Rack
+      posX: 0.2749999
+      posY: 0.368999
+      posZ: 47.85
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+    - code: FD36-R-02-A
+      model: Set_Box_Rack
+      posX: 0.2750008
+      posY: 0.368999
+      posZ: 40.35
+      rotX: 0
+      rotY: 180
+      rotZ: 0
+  - code: FE1
+    model: FE1
+    procTime: 710
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: 26.57
+    rotX: 0
+    rotY: 180
+    rotZ: 0
+    ports:
+    - code: FE1-D-02
+      model: FE1_ConsolBattery_Pallet
+      posX: -2.039
+      posY: 0.6229999
+      posZ: 26.57
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FEM-M-01
+      model: FE1_FEM_Pallet
+      posX: 5.375
+      posY: 0.6229999
+      posZ: 25.32
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE1-D-01
+      model: FE1_RR_Seat_Pallet
+      posX: 5.159999
+      posY: 0.6229999
+      posZ: 27.82
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+  - code: FE2
+    model: FE2
+    procTime: 790
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: 17.5
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: FE2-D-02
+      model: FE2_FRTBumper_Pallet
+      posX: 5.440001
+      posY: 0.6200001
+      posZ: 15.7
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: SEAT-M-01
+      model: FE2_FRTSeat_Pallet
+      posX: -2.49
+      posY: 0.6199999
+      posZ: 16.3
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: SEAT-M-02
+      model: FE2_RH_Seat_Pallet
+      posX: 5.29
+      posY: 0.6200001
+      posZ: 18
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE2-D-01
+      model: FE2_Spoiler_Pallet
+      posX: -2.1
+      posY: 0.9329998
+      posZ: 18.7
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+  - code: FE3
+    model: FE3
+    procTime: 551
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: 1.35
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: DR-M-02
+      model: FE3_Door_Pallet
+      posX: -2
+      posY: 0.4200001
+      posZ: 2.2
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-01
+      model: FE3_Door_Pallet
+      posX: 5.1
+      posY: 0.4200001
+      posZ: 2.2
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: FE3-R-01-B
+      model: Set_Box_Rack
+      posX: -2.2
+      posY: 0.368999
+      posZ: -0.1250004
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FE3-R-01-A
+      model: Set_Box_Rack
+      posX: 5.3
+      posY: 0.3699999
+      posZ: -0.1250004
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+  - code: FE4
+    model: FE4
+    procTime: 496
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: -7.5
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: FE4-D-03
+      model: FE4_Gls_Pallet
+      posX: -2.15
+      posY: 0.77
+      posZ: -9.29
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE4-D-02
+      model: FE4_Tire_Pallet
+      posX: -2.15
+      posY: 0.02
+      posZ: -6.8
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE4-D-01
+      model: FE4_Tire_Pallet
+      posX: 5.25
+      posY: 0.02
+      posZ: -7.1
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+  - code: FE5
+    model: FE5
+    procTime: 552
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: -23.2
+    rotX: 0
+    rotY: 180
+    rotZ: 0
+    ports:
+    - code: FE5-R-02-B
+      model: Set_Box_Rack
+      posX: -2.150001
+      posY: 0.368999
+      posZ: -23.605
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FE5-R-02-A
+      model: Set_Box_Rack
+      posX: -2.150001
+      posY: 0.368999
+      posZ: -21.355
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FE5-R-01-A
+      model: Set_Box_Rack
+      posX: 5.349999
+      posY: 0.368999
+      posZ: -21.355
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FE5-R-01-B
+      model: Set_Box_Rack
+      posX: 5.349999
+      posY: 0.368999
+      posZ: -23.605
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+  - code: PC1
+    model: PC
+    procTime: 561
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: -30.54
+    rotX: 0
+    rotY: 180
+    rotZ: 0
+    ports:
+    - code: PC1-R-01-A
+      model: Set_Box_Rack
+      posX: -2.2
+      posY: 0.369
+      posZ: -30.27
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: PC1-R-01-B
+      model: Set_Box_Rack
+      posX: -2.2
+      posY: 0.368999
+      posZ: -32.68
+      rotX: 2.87871E-13
+      rotY: 90
+      rotZ: 2.878709E-13
+    - code: PC1-D-01-A
+      model: PC_UPR_FRU_Pallet
+      posX: 5.11
+      posY: 0.3699999
+      posZ: -28.89
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: PC1-D-01-B
+      model: PC_UPR_FRU_Pallet
+      posX: 5.11
+      posY: 0.3599963
+      posZ: -31.66
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+  - code: FC1
+    model: FC1
+    procTime: 710
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 1.55
+    posY: 0.02
+    posZ: -46.5
+    rotX: 0
+    rotY: 180
+    rotZ: 0
+    ports:
+    - code: FC1-D-01-B
+      model: FC1_UnderCover_FRT_Pallet
+      posX: -1.960001
+      posY: 0.8700001
+      posZ: -47.61
+      rotX: 90
+      rotY: 180
+      rotZ: 0
+    - code: FC1-D-01-A
+      model: FC1_UnderCover_RR_Pallet
+      posX: -1.960001
+      posY: 0.8699999
+      posZ: -45.24
+      rotX: 0
+      rotY: 90
+      rotZ: 270
+  - code: CMS
+    model: CMS
+    procTime: 0
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: -12
+    posY: 0
+    posZ: 11.3
+    rotX: 0
+    rotY: 270
+    rotZ: 0
+    ports: []
+  - code: Door
+    model: Door
+    procTime: 0
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 12.46
+    posY: 0
+    posZ: 54.27
+    rotX: 270
+    rotY: 0
+    rotZ: 0
+    ports: []
+  - code: Marriage_Susp
+    model: Marriage_Susp
+    procTime: 0
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 13.26
+    posY: 0.6
+    posZ: -1.12
+    rotX: 270
+    rotY: 270
+    rotZ: 0
+    ports: []
+  - code: Supply
+    model: Supply
+    procTime: 0
+    doorOpenTime: 2
+    doorCloseTime: 2
+    posX: 27.25
+    posY: 0
+    posZ: 0
+    rotX: 0
+    rotY: 0
+    rotZ: 0
+    ports:
+    - code: SEAT-M-01
+      model: FE2_FRTSeat_Pallet
+      posX: 23.23608
+      posY: 0.72
+      posZ: 52.57
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: SEAT-M-02
+      model: FE2_RH_Seat_Pallet
+      posX: 30.60107
+      posY: 0.715
+      posZ: 50.328
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-02
+      model: TE1_Set_Pallet_Door
+      posX: 23.39893
+      posY: 0.37
+      posZ: 32.547
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-01
+      model: TE1_Set_Pallet_Door
+      posX: 25.29102
+      posY: 0.37
+      posZ: 34.734
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: DR-M-02
+      model: TE1_Set_Pallet_Door
+      posX: 23.34302
+      posY: 0.42
+      posZ: 34.781
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-01
+      model: TE1_Set_Pallet_Door
+      posX: 25.29004
+      posY: 0.42
+      posZ: 32.45
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: FEM-M-01
+      model: FE1_FEM_Pallet
+      posX: 25.31006
+      posY: 0.62
+      posZ: 52.51
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: CPAD-M-01
+      model: TE4_RH_HeadLining_Pallet
+      posX: 30.8291
+      posY: 0.02
+      posZ: 52.611
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-01-A
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.3689838
+      posZ: 48.129
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE3-R-02
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.3690028
+      posZ: 45.843
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: PC1-R-01-A
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.3690009
+      posZ: 36.981
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FE5-R-02-A
+      model: Set_Box_Rack
+      posX: 23.3501
+      posY: 0.37
+      posZ: 39.255
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FD36-R-02-A
+      model: Set_Box_Rack
+      posX: 23.3501
+      posY: 0.368999
+      posZ: 41.508
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FD25-R-01-A
+      model: Set_Box_Rack
+      posX: 23.3501
+      posY: 0.368999
+      posZ: 43.61
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: AM-R-01-A
+      model: Set_Box_Rack
+      posX: 23.3501
+      posY: 0.3678813
+      posZ: 45.884
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: TE3-R-01
+      model: Set_Box_Rack
+      posX: 23.3501
+      posY: 0.368999
+      posZ: 48.133
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FE5-R-01-A
+      model: Set_Box_Rack
+      posX: 25.25
+      posY: 0.37
+      posZ: 39.27
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FE3-R-01-A
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.37
+      posZ: 39.268
+      rotX: 1.207418E-06
+      rotY: 90.00001
+      rotZ: 1.207418E-06
+    - code: FD36-R-01-A
+      model: Set_Box_Rack
+      posX: 25.25
+      posY: 0.368999
+      posZ: 41.54
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-02-A
+      model: Set_Box_Rack
+      posX: 25.25
+      posY: 0.368999
+      posZ: 43.63
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: PM-R-01-A
+      model: Set_Box_Rack
+      posX: 25.25
+      posY: 0.3700824
+      posZ: 45.87
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-02-A
+      model: Set_Box_Rack
+      posX: 25.25
+      posY: 0.3689838
+      posZ: 48.11
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-01-A
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.368999
+      posZ: 43.629
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE2-D-01
+      model: TE2_LH-1_Set_Pallet
+      posX: 31.04004
+      posY: 0.3699909
+      posZ: 13.31
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: FD25-R-02-A
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.368999
+      posZ: 41.498
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: TE2-D-02
+      model: TE2_RH-1_Set_Pallet
+      posX: 25.37012
+      posY: 0.02
+      posZ: 13.23
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE2-D-03
+      model: TE2_RH-2_Set_Pallet
+      posX: 23.46997
+      posY: 0.02
+      posZ: 13.41
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: TE3-D-01
+      model: TE3_Modul1_Pallet
+      posX: 30.8999
+      posY: 0.52
+      posZ: 10.88
+      rotX: 90
+      rotY: 5.008956E-06
+      rotZ: 0
+    - code: TE4-D-01
+      model: TE4_LH_BLower_Pallet
+      posX: 25.3501
+      posY: 0.02
+      posZ: 10.85
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: TE4-D-03
+      model: TE4_LH_Bumper_Pallet
+      posX: 25.38989
+      posY: 0.02
+      posZ: 20.9
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: TE4-D-02
+      model: TE4_RH_CPAD_Pallet
+      posX: 30.927
+      posY: 0.01
+      posZ: -3
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: TE5-D-02
+      model: TE5_2Step_Pallet
+      posX: 23.55005
+      posY: 0.37
+      posZ: 10.92
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: TE5-D-01
+      model: TE5_2Step_Pallet
+      posX: 23.32007
+      posY: 0.37
+      posZ: 20.94
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: PM-D-01
+      model: PM_Pallet
+      posX: 24.34009
+      posY: 0.38
+      posZ: -9.31
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: AM-D-01
+      model: AM_Pallet
+      posX: 30.79004
+      posY: 0.38
+      posZ: 8.43
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: FE1-D-02
+      model: FE1_ConsolBattery_Pallet
+      posX: 25.29004
+      posY: 0.62
+      posZ: -5.54
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE1-D-01
+      model: FE1_RR_Seat_Pallet
+      posX: 30.87012
+      posY: 0.62
+      posZ: 18.42
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE2-D-02
+      model: FE2_FRTBumper_Pallet
+      posX: 25.41992
+      posY: 0.62
+      posZ: 18.44
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE2-D-01
+      model: FE2_Spoiler_Pallet
+      posX: 23.3501
+      posY: 0.93
+      posZ: 18.46
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE4-D-03
+      model: FE4_Gls_Pallet
+      posX: 30.65991
+      posY: 0.77
+      posZ: 1.89
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE4-D-02
+      model: FE4_Tire_Pallet
+      posX: 23.13989
+      posY: 0.02
+      posZ: 8.69
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE4-D-01
+      model: FE4_Tire_Pallet
+      posX: 25.22998
+      posY: 0.02
+      posZ: 8.56
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: PC1-D-01-B
+      model: PC_UPR_FRU_Pallet
+      posX: 25.29004
+      posY: 0.37
+      posZ: 1.84
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: PC1-D-01-A
+      model: PC_UPR_FRU_Pallet
+      posX: 23.3
+      posY: 0.37
+      posZ: 1.84
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: FC1-D-01-A
+      model: FC1_UnderCover_FRT_Pallet
+      posX: 25.2
+      posY: 0.97
+      posZ: 15.89
+      rotX: 90
+      rotY: 0
+      rotZ: 180
+    - code: DR-M-02
+      model: TE1_Set_Pallet_Door
+      posX: 23.396
+      posY: 0.37
+      posZ: 23.266
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: DR-M-01
+      model: TE1_Set_Pallet_Door
+      posX: 25.28809
+      posY: 0.37
+      posZ: 25.453
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: DR-M-02
+      model: TE1_Set_Pallet_Door
+      posX: 25.19995
+      posY: 0.42
+      posZ: 23.18
+      rotX: 270
+      rotY: 90
+      rotZ: 0
+    - code: DR-M-01
+      model: TE1_Set_Pallet_Door
+      posX: 23.43994
+      posY: 0.42
+      posZ: 25.57
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: TE4-D-03
+      model: TE4_LH_Bumper_Pallet
+      posX: 25.29004
+      posY: 0.02
+      posZ: -3.02
+      rotX: 270
+      rotY: 89.99999
+      rotZ: 0
+    - code: TE5-D-01
+      model: TE5_2Step_Pallet
+      posX: 23.25
+      posY: 0.37
+      posZ: -2.99
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE2-D-01
+      model: FE2_FRTBumper_Pallet
+      posX: 23.29004
+      posY: 0.93
+      posZ: -5.63
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE1-D-01
+      model: FE1_RR_Seat_Pallet
+      posX: 30.98999
+      posY: 0.62
+      posZ: -5.51
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FE2-D-02
+      model: FE2_FRTBumper_Pallet
+      posX: 30.81396
+      posY: 0.62
+      posZ: -8.054
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FC1-D-01-B
+      model: FC1_UnderCover_RR_Pallet
+      posX: 30.22095
+      posY: 0.87
+      posZ: -10.474
+      rotX: -1.024528E-05
+      rotY: 90
+      rotZ: 270
+    - code: PC1-R-01-B
+      model: Set_Box_Rack
+      posX: 30.81396
+      posY: 0.3690009
+      posZ: -33.529
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FE5-R-02-B
+      model: Set_Box_Rack
+      posX: 23.354
+      posY: 0.37
+      posZ: -31.255
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FD36-R-02-B
+      model: Set_Box_Rack
+      posX: 23.354
+      posY: 0.368999
+      posZ: -29.002
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: AM-R-01-B
+      model: Set_Box_Rack
+      posX: 23.354
+      posY: 0.3678813
+      posZ: -24.626
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: TE3-R-01
+      model: Set_Box_Rack
+      posX: 23.354
+      posY: 0.368999
+      posZ: -22.377
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: TE1-R-01-B
+      model: Set_Box_Rack
+      posX: 30.81396
+      posY: 0.3689838
+      posZ: -22.381
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FE5-R-01-B
+      model: Set_Box_Rack
+      posX: 25.25391
+      posY: 0.37
+      posZ: -31.24
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FE3-R-01-B
+      model: Set_Box_Rack
+      posX: 30.81396
+      posY: 0.37
+      posZ: -31.242
+      rotX: 1.207418E-06
+      rotY: 90.00001
+      rotZ: 1.207418E-06
+    - code: SEAT-M-01
+      model: FE2_FRTSeat_Pallet
+      posX: 23.23999
+      posY: 0.72
+      posZ: -17.94
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: SEAT-M-02
+      model: FE2_RH_Seat_Pallet
+      posX: 30.60498
+      posY: 0.715
+      posZ: -20.182
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FEM-M-01
+      model: FE1_FEM_Pallet
+      posX: 25.31396
+      posY: 0.62
+      posZ: -18
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: FD36-R-01-B
+      model: Set_Box_Rack
+      posX: 25.25391
+      posY: 0.368999
+      posZ: -28.97
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD25-R-01-B
+      model: Set_Box_Rack
+      posX: 23.354
+      posY: 0.368999
+      posZ: -26.9
+      rotX: 0
+      rotY: 90
+      rotZ: 0
+    - code: FD14-R-02-B
+      model: Set_Box_Rack
+      posX: 25.25391
+      posY: 0.368999
+      posZ: -26.88
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: PM-R-01-B
+      model: Set_Box_Rack
+      posX: 25.25391
+      posY: 0.3700824
+      posZ: -24.64
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: TE1-R-02-B
+      model: Set_Box_Rack
+      posX: 25.25391
+      posY: 0.3689838
+      posZ: -22.4
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD14-R-01-B
+      model: Set_Box_Rack
+      posX: 30.81396
+      posY: 0.368999
+      posZ: -26.881
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: CPAD-M-01
+      model: TE4_RH_HeadLining_Pallet
+      posX: 30.83301
+      posY: 0.02
+      posZ: -17.899
+      rotX: 270
+      rotY: 270
+      rotZ: 0
+    - code: TE3-R-02
+      model: Set_Box_Rack
+      posX: 30.81396
+      posY: 0.3690028
+      posZ: -24.667
+      rotX: 0
+      rotY: 270
+      rotZ: 0
+    - code: FD25-R-02-B
+      model: Set_Box_Rack
+      posX: 30.81006
+      posY: 0.368999
+      posZ: -29.04
+      rotX: 0
+      rotY: 90
+      rotZ: 0
