@@ -29142,7 +29142,7 @@ MonoBehaviour:
   scaler: {fileID: 0}
   robots: []
   lines: []
-  prefab_AGV: {fileID: 4693463645666072804, guid: 133397ead2e959149acfcb689d14d848, type: 3}
+  prefab_AGV: {fileID: 8738562721092414848, guid: 133397ead2e959149acfcb689d14d848, type: 3}
   prefab_Obstacle: {fileID: 0}
   unscaleLine:
   - {fileID: 1332246088}
@@ -29216,9 +29216,12 @@ MonoBehaviour:
   speed: 5
   scaleRunTime: 0
   unscaleRunTime: 0
-  startSpeed: 1
-  scaleTime: 1
+  startSpeed: 0.1
+  scaleTime: 0
   unscaleTime: 0
+  scaleMoveLength: 0
+  unscaleMoveLength: 0
+  fixedUpdateCount: 0
 --- !u!1 &1820589699
 GameObject:
   m_ObjectHideFlags: 0

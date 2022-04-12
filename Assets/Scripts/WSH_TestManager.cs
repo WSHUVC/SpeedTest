@@ -7,7 +7,7 @@ using UnityEngine;
 public class WSH_TestManager : WSH_RobotManager
 {
     [SerializeField]
-    GameObject prefab_AGV;
+    WSH_Robot prefab_AGV;
     [SerializeField]
     GameObject prefab_Obstacle;
 
@@ -36,22 +36,16 @@ public class WSH_TestManager : WSH_RobotManager
     float unscaleRunTime;
     [SerializeField]
     float startSpeed;
-
-    private void Awake()
+    protected override void Awake()
     {
-        lines = FindObjectsOfType<WSH_Line>();
-        scaler = FindObjectOfType<WSH_SpeedScaler>();
+        base.Awake();
         order = new WSH_Struct_Order(WSH_Flag_RobotCommand.Move);
         int i = 0;
         foreach(var l in lines)
         {
              l.SetTriggerMask(1<<LayerMask.NameToLayer("AGV"));
             var start = l.startTransform;
-            var agv = Instantiate(prefab_AGV).GetComponent<WSH_Robot>();
-            //order.target = l.endTransform;
-            agv.RegistManager(this);
-            agv.gameObject.transform.position = start.position;
-            agv.name = "AGV_" + (i++);
+            var agv = SpawnRobot(i, prefab_AGV, start.position);
             order.target = l.startToEnd;
             agv.Order(order);
 
@@ -91,14 +85,14 @@ public class WSH_TestManager : WSH_RobotManager
         {
             unscaleRunTime += unscaleTime;
             unscaleCounter = unscaleRobot.orderCompleteCounter;
-            unscaleMoveLength = unscaleRobot.move;
+            unscaleMoveLength = unscaleRobot.moveLength;
         }
 
         if(scaleCounter< 1 * scaler.totalScale)
         {
             scaleRunTime += scaleTime * scaler.speedScale;
             scaleCounter = scaleRobot.orderCompleteCounter;
-            scaleMoveLength = scaleRobot.move;
+            scaleMoveLength = scaleRobot.moveLength;
             fixedUpdateCount++;
         }
     }

@@ -178,9 +178,10 @@ public class WSH_Robot : MonoBehaviour
         }
         var temp = transform.position;
         transform.position += targetDirection * speedPerTime;
-        move += Vector3.Distance(temp, transform.position);
+        moveLength += Vector3.Distance(temp, transform.position);
     }
-    public float move;
+    //이동한거리
+    public float moveLength;
 
     //이동하기 전 호출됩니다.
     bool ReachCheck()

@@ -38,9 +38,9 @@ public class WSH_SpeedScaler : MonoBehaviour
     public float timeScale;
 
     public float speedScale;
-    public float myDeltaTime => (float)Math.Round(Time.fixedDeltaTime * timeScale, 2);
+    public float myDeltaTime => Time.fixedDeltaTime * timeScale;
     public float totalScale => timeScale * speedScale;
-    public float errorScaler => timeScale == 1f ? 1f : (1 + timeScale / (totalScale * 10));
+    public float errorScaler => timeScale == 1f ? 1f : (1 + timeScale / (totalScale*2));
 
     private void Update()
     {
